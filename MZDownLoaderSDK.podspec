@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.authors      = "Mengzhu"
   s.name         = "MZDownLoaderSDK"
-  s.version      = "1.0.9"
+  s.version      = "2.1.0"
   s.summary      = "MZKitDownload iOS SDK"
   s.description  = "Provide download service for users"
   s.homepage     = "http://www.zmengzhu.com"
@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.vendored_frameworks = 'MZDownLoaderSDK/MZM3U8DownLoaderSDK.framework'
   s.resource="MZDownLoaderSDK/MZM3U8DownLoaderSDKBundle.bundle"
-  s.dependency 'MZCoreSDKLibrary'
+  s.dependency 'MZCoreSDKLibrary', '~> 2.1.0'
   end

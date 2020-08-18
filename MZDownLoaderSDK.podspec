@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.authors      = "Mengzhu"
   s.name         = "MZDownLoaderSDK"
-  s.version      = "2.2.1"
+  s.version      = "2.2.2"
   s.summary      = "MZKitDownload iOS SDK"
   s.description  = "Provide download service for users"
   s.homepage     = "http://www.zmengzhu.com"

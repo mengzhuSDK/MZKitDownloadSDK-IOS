@@ -12,5 +12,4 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.vendored_frameworks = 'MZDownLoaderSDK/MZM3U8DownLoaderSDK.framework'
   s.resource="MZDownLoaderSDK/MZM3U8DownLoaderSDKBundle.bundle"
-  s.dependency 'MZCoreSDKLibrary', '~> 2.2.0'
   end

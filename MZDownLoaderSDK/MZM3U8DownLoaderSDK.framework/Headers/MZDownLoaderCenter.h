@@ -11,6 +11,15 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
+/**
+ *  自定义Log，可配置开关（用于替换NSLog）
+ */
+#define MZDownLog(format,...) MZ_Down_CustomLog(__FUNCTION__,__LINE__,format,##__VA_ARGS__)
+
+void MZ_Down_CustomLog(const char *func, int lineNumber, NSString *format, ...);
+
 #define kPathDownload @"Download"
 
 typedef enum : NSUInteger {
@@ -22,7 +31,6 @@ typedef enum : NSUInteger {
     MZDownLoaderState_Stop,//停止
 } MZDownLoaderState;
 
-NS_ASSUME_NONNULL_BEGIN
 
 @class MZDownLoader;
 @protocol MZDownLoaderDelegate <NSObject>
@@ -48,8 +56,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)downloaderPause:(MZDownLoader *)download;
 @end
-
-
 
 @interface MZDownLoaderCenter : NSObject
 
